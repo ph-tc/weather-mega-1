@@ -130,6 +130,7 @@ body {
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
+	overflow: hidden;
 }
 
 img {
@@ -156,7 +157,7 @@ img {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 9px;
 	line-height: 1;
-	color: #444;
+	color: #eee;
 }
 
 .offer a {

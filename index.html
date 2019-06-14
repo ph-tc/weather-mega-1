@@ -15,8 +15,7 @@
 <div class="header">
 	<div class="offer">
 		<div class="inner blured">
-		<span>Нажатием на кнопку "Узнать" Вы подтверждаете свое согласие с подключением подписки SUBNAME и <a
-			href="http://podpiski.megafon.ru/col/mds4/web/jsp/files/oferta.pdf">Условиями предоставления подписки</a>. Стоимость подписки SUBPRICE.ACCOUNT. Услуга предоставляется Контент-провайдером PROVIDER.</span>
+			<span>Нажатием на кнопку "Узнать" Вы подтверждаете свое согласие с подключением подписки SUBNAME и <a	href="http://podpiski.megafon.ru/col/mds4/web/jsp/files/oferta.pdf">Условиями предоставления подписки</a>. Стоимость подписки SUBPRICE.ACCOUNT. Услуга предоставляется Контент-провайдером PROVIDER.</span>
 		</div>
 	</div>
 	<div class="inner blured">
@@ -34,20 +33,17 @@
 
 <div class="main">
 	<div class="inner">
-		<div class="location-wrapper">
-			<div class="inner">
-				<div class="location-btn-wrapper">
-					<button disabled></button>
-				</div>
-				<div class="city">
-					<a href="#">Выбрать город</a>
-				</div>
-			</div>
-		</div>
 		<div class="temperature-wrapper">
 			<div class="inner">
 				<div class="temperature">
 					<div class="degrees">+20&deg;C</div>
+				</div>
+				<div class="feel-wrapper">
+					<div class="inner">
+						<div class="feel">
+							<span>Ощущается как +22</span>
+						</div>
+					</div>
 				</div>
 				<p class="description">Ясно</p>
 				<p class="description">Переменная облачность</p>
@@ -63,15 +59,11 @@
 				<table class="wrapper">
 					<tr>
 						<td>Давление</td>
-						<td>770 мм.рт.ст</td>
+						<td>Спокойное магнитное поле</td>
 					</tr>
 					<tr>
 						<td>Влажность</td>
-						<td>60%</td>
-					</tr>
-					<tr>
-						<td>Скорость ветра</td>
-						<td>1,7 м/с</td>
+						<td>Низкий УФ-индекс</td>
 					</tr>
 				</table>
 				<div class="week">
@@ -97,33 +89,6 @@
 		<p>Информация для абонентов - тел. 8 800 500-25-43 (бесплатно в домашнем регионе) | <a href="ВАША ССЫЛКА НА ПРАВИЛА ПОДПИСКИ">Правила подписки поставщика услуг</a> | <a href="#<LK_LINK_URL>">Личный кабинет</a></p>
 	</div>
 </div>
-<script type="text/javascript">
-		//<![CDATA[
-		function rsz() {
-				var footer = document['getElementById']('footer');
-				var buttonWrap = document['getElementsByClassName']('btn-wrapper')[0];
-				footer['style']['bottom'] = "auto";
-				footer['style']['top'] = (window['innerHeight'] - footer.offsetHeight) + 'px';
-				if ((window['innerHeight'] > 212) && (window['innerHeight'] < 233)) {
-						buttonWrap['style']['marginTop'] = '-'+ (footer.offsetHeight-55) + 'px';
-				} else { buttonWrap['style']['marginTop'] = 0; }
-
-				document.body.style.height = window.innerHeight + 'px';
-		}
-		setInterval(function() {
-				rsz()
-		}, 100);
-		window['onresize'] = function() {
-				window['scrollTo'](0, 0);
-				setTimeout(function() {
-						rsz()
-				}, 100)
-		};
-		document.addEventListener('touchmove', function(e) {
-				e.preventDefault();
-		}, { passive: false });
-		//]]>
-</script>
 
 </body>
 </html>
